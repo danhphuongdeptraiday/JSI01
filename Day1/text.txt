@@ -1,0 +1,54 @@
+1. Các kiểu dữ liệu trong JS: String, Number, Boolean, Object, Null, undefine
+2. Các cách khai báo biến: let, var, const
+    - let: cho phép gán dữ giá trị mới cho 1 biến
+    - const: không dc gán giá trị mới
+    - var: 
+3. Ép kiểu trong JS: String(), Number(), Boolean();
+4. Prompt() => dữ liệu nhập và sẽ ở dạng String, alert("String")
+5. Toán tử trong JS: +, -, *, /, %, **, Math.sqrt()
+6. So sánh: ==, <=, >=, !=, ===
+7. for(vị trí bắt đầu; Điều kiện để vòng lặp chạy; bước nhảy/ sự thay đổi của vị trí bắt đầu sau mỗi lần lặp)
+8. while(điều kiện) { bước nhảy++ }
+9. if(condition){}, else if(), else
+10. switch case
+11. array: 
+    - push() add last
+    - pop() get last element and remove it out array
+12. object: 
+let human = {
+    tier: 10,
+    eat: function() {
+        console.log("i want to eat")
+    },
+    favor: ["Football", "basketball"]
+}
+
+how we can get value of object by attribute 
+13. 4 basic types:
+    - void: function VD: function hello() {
+        console.log()
+    } 
+    - function count(a, b) {
+
+    }
+    count(1, 2)
+    - function returnFunction() {
+
+        return "hello"
+    }
+    - function countPlus(a, b) {
+
+        return "Tong 2 so a va b = " + (a + b) 
+    }
+
+14. ${}
+15. DOM: document.getElementById(""), document.querySelector(".className")
+    innerText, style
+16. addEventListener("type of event", function() {
+
+})
+17. setTimeout(function(){}, 3000) 
+18. 
+
+
+        
