@@ -60,7 +60,6 @@ section:after {
   top: 40vmin;
   left: calc(50% - 3.5vmin);
   z-index: 2;
-  transform: rotate(-90deg);
   transform-origin: 16%;
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
   drop-shadow: (12px 12px 7px rgba(0, 0, 0, 0.5));
@@ -90,7 +89,7 @@ section:after {
   width: 40vmin;
   height: 1vmin;
   top: 40.5vmin;
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
   transform-origin: 10%;
   border-top-right-radius: 30%;
   border-bottom-right-radius: 30%;
@@ -117,7 +116,7 @@ section:after {
   width: 35vmin;
   height: 0.5vmin;
   top: 40.75vmin;
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
   transform-origin: 11.5%;
   box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.4);
 }

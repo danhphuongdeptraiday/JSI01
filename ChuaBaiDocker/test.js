@@ -1,18 +1,21 @@
 let kim = document.getElementById("secondhand");
 let minute = document.getElementById("minutehand");
-
-kim.style.transform = "rotate(-90deg)";
-
-let degChangeInSecond = -90;
-let degChangeInMinute = -90;
-let count = 0;
+let hour = document.getElementById("hourhand");
 setInterval(function () {
-  count = count + 1;
-  if (count % 60 == 0) {
-    degChangeInMinute = degChangeInMinute + 6;
-    minute.style.transform = `rotate(${degChangeInMinute}deg)`;
-  }
-  degChangeInSecond = degChangeInSecond + 6;
+  let date = new Date();
+  degChangeInMinute = (date.getMinutes() + date.getSeconds() / 60) * 6 - 90;
+
+  minute.style.transform = `rotate(${degChangeInMinute}deg)`;
+  degChangeInHour =
+    (date.getHours() + date.getMinutes() / 60 + date.getSeconds() / 3600) * 30 -
+    90;
+
+  hour.style.transform = `rotate(${degChangeInHour}deg)`;
+
+  degChangeInSecond = date.getSeconds() * 6 - 90;
   kim.style.transform = `rotate(${degChangeInSecond}deg)`;
-  console.log("hello");
+  console.log("Giay = " + degChangeInSecond);
+  console.log("Phut = " + degChangeInMinute);
+  console.log("Gio = " + degChangeInHour);
+  console.log("");
 }, 1000);
