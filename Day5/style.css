@@ -14,7 +14,6 @@ body {
 .weather_container {
   width: 400px;
   height: 500px;
-  background-color: rgb(222, 152, 189);
   margin: 40px auto 0px;
   padding: 15px;
   background-image: url("./sad.gif");
